@@ -1,6 +1,14 @@
 # Easy_Search_Widget_Android
 A easy to use search widget for Android. Just add module easysearchwidget in your project. It takes an array list of strings which serves as a list of possible search results. At the top, it allows an input. Based on the input, the list of strings (that was passed to it) shows up, ordered according to how close each of them is to the input query. When the user taps on one of the results, it is returned to the activity which called this widget. The main motivation behind writing this widget, especially when android has its own stock android search widget, was that using the already-present search widget is cumbersome. It involves alot of steps, changes in the manifest, etc. A simple widget, which simply took an array list as the list of possible results and returned the selection felt to be the need of the hour. 
 
+This uses a 'word-distance' concept to order the results. A distance between two words is defined as the number of 'edits' that a word must undergo to be transformed into another word. An edit is defined as:
+
+1. Deletion of a character
+2. Addition of a character
+3. Changing a character into another 
+
+This calculates the shortest distance between the search query and each possible result and then orders the result according to this value. 
+
 To use the easy search widget: 
 
 1. Create an intent 

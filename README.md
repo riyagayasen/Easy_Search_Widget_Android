@@ -39,3 +39,7 @@ The searchRequestCode is any integer code that you can use.
 				}
 		}
 To retrive the result, first check forthe requestCode. This should be same as the searchRequestCode that you used to start the search activity. Now, to get the string that was chosen from the list of search results inside the SearchActivity, use SearchActivity.CHOSEN_VALUE_KEY to retrieve a string value. 
+
+A screenshot of the component with some country names as input strings. 
+
+![Alt text](/Screenshot.jpg?raw=true "Optional Title")
